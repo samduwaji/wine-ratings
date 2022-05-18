@@ -27,7 +27,6 @@ function searchFields (){
     	let link4 = `https://www.winemag.com/?s=${linkquery}&search_type=all`;
 	let link5 = `https://vinous.com/wines?term=${linkquery}&sort=vintage&sortDirection=true&page=1&per_page=25&displayType=reviews`;
     	let link6 = `https://www.decanter.com/wine-reviews/search?query=${linkquery}`;
-    	let link7 = `https://www.jancisrobinson.com/tastings?search-full=%22${linkquery}%22`;
     	let link8 = `https://jebdunnuck.com/wines/?keyword=${linkquery}`;
     	let link9 = `https://www.falstaff.com/wine/tastings-scores/#${linkquery};default;entity:wine`;
     	let link10 = `http://www.lucamaroni.com/index.php/en/best-tastings/tastings/en/luca-maroni-eng`;
@@ -48,9 +47,9 @@ function searchFields (){
 	window.open(link8,'_blank')
 	window.open(link9,'_blank')
 	window.open(link7,'_blank')
-	window.open(link14,'_blank')
-	window.open(link10,'_blank')
 	window.open(link11,'_blank')
 	window.open(link12,'_blank')
 	window.open(link13,'_blank')
+	window.open(link10,'_blank')
+	window.open(link14,'_blank')
 }
