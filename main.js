@@ -1,0 +1,62 @@
+var input = document.getElementById("searchTerm");
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("myButton").click();
+    }
+});
+function searchFields (){
+
+    let searchVal = input.value.replace(' ', '+');
+
+    // Get the input field
+    
+    console.log(searchVal)
+
+    // let link1query = searchVal.replace(' ', '+')
+    let linkquery = encodeURI(searchVal)
+    
+	let link0 = `https://www.wine-searcher.com/find/${linkquery}/-/usa/-/ndp`;
+	let link1 = `https://www.winespectator.com/wine/search?submitted=Y&scope=ratings&winery=${linkquery}`;
+    let link2 = `https://www.robertparker.com/search/wines?q=${linkquery}`;
+    let link3 = `https://www.jamessuckling.com/?s=${linkquery}&content_all=All&contents%5B0%5D=Tasting+Reports&contents%5B1%5D=Tasting+Notes&contents%5B2%5D=Videos&contents%5B3%5D=Events&SelectedContents=Tasting%20Notes`;
+    let link4 = `https://www.winemag.com/?s=${linkquery}&search_type=all`;
+	let link5 = `https://vinous.com/wines?term=${linkquery}&sort=vintage&sortDirection=true&page=1&per_page=25&displayType=reviews`;
+    let link6 = `https://www.decanter.com/wine-reviews/search?query=${linkquery}`;
+    let link7 = `https://www.jancisrobinson.com/tastings?search-full=%22${linkquery}%22`;
+    let link8 = `https://jebdunnuck.com/wines/?keyword=${linkquery}`;
+    let link9 = `https://www.falstaff.com/wine/tastings-scores/#${linkquery};default;entity:wine`;
+    let link10 = `http://www.lucamaroni.com/index.php/en/best-tastings/tastings/en/luca-maroni-eng`;
+    let link11 = `https://www.vivino.com/search/wines?q=${linkquery}`;
+    let link12 = `https://www.wine.com/search/${linkquery}/0`;
+    let link13 = `https://www.totalwine.com/search/all?text=${linkquery}&pageSize=24&aty=0,0,0,1`;
+	let link14 = `https://guiapenin.wine/guide/wines/en?winename=${linkquery}&vino=1`
+
+
+    // browser.tabs.create()
+
+	window.open(link0,'_blank')
+	window.open(link1,'_blank')
+    window.open(link2,'_blank')
+    window.open(link3,'_blank')
+    window.open(link4,'_blank')
+    window.open(link5,'_blank')
+    window.open(link6,'_blank')
+	window.open(link8,'_blank')
+	window.open(link9,'_blank')
+	window.open(link7,'_blank')
+	window.open(link14,'_blank')
+	window.open(link10,'_blank')
+	window.open(link11,'_blank')
+	window.open(link12,'_blank')
+	window.open(link13,'_blank')
+
+
+    
+
+
+}
