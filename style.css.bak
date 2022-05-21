@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body{
+  background: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -47,52 +48,12 @@ body{
   transform: translate(-50%, -50%);
 }
 
-.font2 {font-family:'Open Sans'; font-size:16px}
-
-input[type=checkbox], input[type=radio] {
-  vertical-align: middle;
-  position: relative;
-  bottom: 1px;
-  width: 20px; 
-  height: 20px;
-}
-
-input[type=checkbox], input[type=radio] {
-  vertical-align: middle;
-  position: relative;
-  bottom: 1px;
-  width: 20px; 
-  height: 20px;
-}
-
-input[type="checkbox"]:checked + label::after {
-       content: '';
-       position: absolute;
-       width: 1.2ex;
-       height: 0.4ex;
-       background: rgba(0, 0, 0, 0);
-       top: 0.9ex;
-       left: 0.4ex;
-       border: 3px solid blue;
-       border-top: none;
-       border-right: none;
-       -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-       -o-transform: rotate(-45deg);
-       -ms-transform: rotate(-45deg);
-       transform: rotate(-45deg);
-    }
-
-input[type=radio] { 
-  bottom: 2px; 
-} 
-
 /* Customize the label (the container) */
 .container {
-  display: flex;
+  display: block;
   position: relative;
   padding-left: 35px;
-  margin-top: 5px;
+  margin-top: 12px;
   margin-bottom: 10px;
   cursor: pointer;
   font-size: 14px;
@@ -100,8 +61,6 @@ input[type=radio] {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  vertical-align:middle;
-  align-items: center;
 }
 
 /* Hide the browser's default checkbox */

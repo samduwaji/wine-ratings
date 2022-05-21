@@ -5,11 +5,10 @@
     <title>Ween Search</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
     <div class="wrap">
         <div class="search">
-           <input type="text"  id="searchTerm" class="searchTerm" placeholder="Enter wine name & vintage">
+           <input type="text"  id="searchTerm" class="searchTerm" placeholder="What are you looking for?">
            <button type="submit" id="myButton" onclick="searchFields()" class="searchButton">
              Search Ween!
           </button>
@@ -19,30 +18,15 @@
 			Select sites you'd like to search:
 		</div>
 		
-		<p class="font2">
-		<label><input type="checkbox" class="checks" id="wineSearcher" checked="checked"/> Wine-Searcher</label>
-		<br><label><input type="checkbox" class="checks" id="wineSpectator" checked="checked"/> Wine Spectator</label>
-		<br><label><input type="checkbox" class="checks" id="wineAdvocate" checked="checked"/> Wine Advocate</label>
-		<br><label><input type="checkbox" class="checks" id="wineEnthusiast" checked="checked"/> Wine Enthusiast</label>
-		<br><label><input type="checkbox" class="checks" id="jamesSuckling" checked="checked"/> James Suckling</label>
-		<br><label><input type="checkbox" class="checks" id="vinous" checked="checked"/> Vinous</label>
-		<br><label><input type="checkbox" class="checks" id="jebDunnuck" checked="checked"/> Jeb Dunnuck</label>
-		<br><label><input type="checkbox" class="checks" id="decanter" checked="checked"/> Decanter</label>
-		<br><label><input type="checkbox" class="checks" id="falstaff" checked="checked"/> Falstaff</label>
-		<br><label><input type="checkbox" class="checks" id="guiaPenin" checked="checked"/> Guia Penin</label>
-		<br><label><input type="checkbox" class="checks" id="lucaMaroni" checked="checked"/> Luca Maroni</label>
-		<br><label><input type="checkbox" class="checks" id="vivino" checked="checked"/> Vivino</label>
-		<br><label><input type="checkbox" class="checks" id="wine.com" checked="checked"/> Wine.com</label>
-		<br><label><input type="checkbox" class="checks" id="totalWine" checked="checked"/> Total Wine & More</label>
-		</p>
-		
-		
-<!--	<label class="container">
-			<input type="checkbox" id="wineSearcher" checked="checked">
+		<label class="container">Search All
+			<input type="checkbox" id="searchAll" checked="checked">
 			<span class="checkmark"></span>
-			<span style="vertical-align:middle">Wine-Searcher<span>
 		</label>
 		
+		<label class="container">Wine-Searcher
+			<input type="checkbox" id="wineSearcher" checked="checked">
+			<span class="checkmark"></span>
+		</label>
 
 		<label class="container">Decanter
 			<input type="checkbox" id="decanter" checked="checked">
@@ -107,8 +91,7 @@
 		<label class="container">Total Wine & More
 			<input type="checkbox" id="totalWine" checked="checked">
 			<span class="checkmark"></span>
-		</label> 
--->
+		</label>
 		
      </div>
 
