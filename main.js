@@ -11,7 +11,7 @@ input.addEventListener("keyup", function(event) {
 });
 function searchFields (){
 
-    let searchVal = inputss.value.replace(' ', '+');
+    let searchVal = input.value.replace(' ', '+');
     let linkquery = encodeURI(searchVal)
 
 //  define links
