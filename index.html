@@ -5,15 +5,245 @@
     <title>Ween Search</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    <div class="wrap">
+
+<body class="u-body u-image u-xl-mode" style="background-position: 50% 50%; background-attachment: scroll; background-image: url(&quot;images/edge2edge-media-aaSmG4bj25I-unsplash11.jpg&quot;);">
+
+<!-- old layout ---
+		<div class="wrap">
         <div class="search">
-           <input type="text"  id="searchTerm" class="searchTerm" placeholder="What are you looking for?">
+           <input type="text"  id="searchTerm" class="searchTerm" placeholder="Enter wine name & vintage">
            <button type="submit" id="myButton" onclick="searchFields()" class="searchButton">
              Search Ween!
           </button>
         </div>
+		
+		<div>
+			Select sites you'd like to search:
+		</div> -->
+
+    <header class="u-clearfix u-header u-header" id="sec-2ab2"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href=https://www.wine-ratings.com class="u-align-center u-image u-logo u-image-1" data-image-width="1366" data-image-height="168">
+          <img src="images/wine-ratingslogowhite.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <form class="u-border-2 u-border-white u-expanded-width-xs u-search u-search-right u-search-1">
+          <button type="submit" id="myButton" class="u-search-button" onclick="searchFields()">
+            <span class="u-custom-color-1 u-icon-rectangle u-search-icon u-spacing-10 u-text-body-alt-color u-search-icon-1">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f09c"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-f09c" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" class="u-svg-content"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg>
+            </span>
+          </button>
+          <input type="text" id="searchTerm" class="u-custom-font u-search-input u-text-body-alt-color u-search-input-1" placeholder="Search">
+        </form>
+      </div>
+    </header>
+		
+<!-- 		<p class="font2">
+		<label><input type="checkbox" class="checks" id="wineSearcher" checked="checked"/> Wine-Searcher</label>
+		<br><label><input type="checkbox" class="checks" id="wineSpectator" checked="checked"/> Wine Spectator</label>
+		<br><label><input type="checkbox" class="checks" id="wineAdvocate" checked="checked"/> Wine Advocate</label>
+		<br><label><input type="checkbox" class="checks" id="wineEnthusiast" checked="checked"/> Wine Enthusiast</label>
+		<br><label><input type="checkbox" class="checks" id="jamesSuckling" checked="checked"/> James Suckling</label>
+		<br><label><input type="checkbox" class="checks" id="vinous" checked="checked"/> Vinous</label>
+		<br><label><input type="checkbox" class="checks" id="jebDunnuck" checked="checked"/> Jeb Dunnuck</label>
+		<br><label><input type="checkbox" class="checks" id="decanter" checked="checked"/> Decanter</label>
+		<br><label><input type="checkbox" class="checks" id="falstaff" checked="checked"/> Falstaff</label>
+		<br><label><input type="checkbox" class="checks" id="guiaPenin" checked="checked"/> Guia Penin</label>
+		<br><label><input type="checkbox" class="checks" id="lucaMaroni" checked="checked"/> Luca Maroni</label>
+		<br><label><input type="checkbox" class="checks" id="vivino" checked="checked"/> Vivino</label>
+		<br><label><input type="checkbox" class="checks" id="wine.com" checked="checked"/> Wine.com</label>
+		<br><label><input type="checkbox" class="checks" id="totalWine" checked="checked"/> Total Wine & More</label>
+		</p> -->
+
+	<section class="u-clearfix u-section-1" id="sec-3f44">
+      <div class="u-align-left-xs u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h5 class="u-custom-font u-text u-text-body-alt-color u-text-default u-text-1">Select sites you'd like to search:</h5>
+        <div class="u-table u-table-responsive u-table-1">
+			<p class="font2">
+				<label class="form-control"><input type="checkbox" class="checks" id="wineSearcher" checked="checked"/> Wine-Searcher</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="wineSpectator" checked="checked"/> Wine Spectator</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="wineAdvocate" checked="checked"/> Wine Advocate</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="wineEnthusiast" checked="checked"/> Wine Enthusiast</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="jamesSuckling" checked="checked"/> James Suckling</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="vinous" checked="checked"/> Vinous</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="jebDunnuck" checked="checked"/> Jeb Dunnuck</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="decanter" checked="checked"/> Decanter</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="falstaff" checked="checked"/> Falstaff</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="guiaPenin" checked="checked"/> Guia Penin (Spanish Only)</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="lucaMaroni" checked="checked"/> Luca Maroni (Italian Only)</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="vivino" checked="checked"/> Vivino</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="wine.com" checked="checked"/> Wine.com</label>
+				<label class="form-control"><input type="checkbox" class="checks" id="totalWine" checked="checked"/> Total Wine & More</label>
+			</p>
+		</div>
+
+ <!--        <div class="u-table u-table-responsive u-table-1">
+          <table class="u-table-entity">
+            <colgroup>
+              <col width="8.15%">
+              <col width="91.85%">
+            </colgroup>
+            <tbody class="u-align-left u-custom-font u-table-body u-text-body-alt-color u-table-body-1">
+              <tr style="height: 16px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-1">x1</td>
+                <td class="u-custom-font u-table-cell u-text-body-alt-color u-table-cell-2">text1</td>
+              </tr>
+              <tr style="height: 16px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-3">x2</td>
+                <td class="u-table-cell">text2</td>
+              </tr>
+              <tr style="height: 16px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-5">x3</td>
+                <td class="u-table-cell">text3</td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-7"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-9"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-11"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 52px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-13"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-15"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-17"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-19"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-21"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-23"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-25"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+              <tr style="height: 42px;">
+                <td class="u-custom-font u-first-column u-table-cell u-table-cell-27"></td>
+                <td class="u-table-cell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> -->
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer" id="sec-94e6"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></footer>
+		
+<!-- <ul>        
+    <li>
+        <div>
+			<label class="container">
+				<input type="checkbox" id="wineSearcher" checked="checked"><span class="checkmark"></span>
+			</label>
+		</div>
+		<div>Wine-Searcher</div>
+	</li>
+
+    <li>
+        <div>
+			<label class="container">
+				<input type="checkbox" id="wineSpectator" checked="checked"><span class="checkmark"></span>
+			</label>
+		</div>
+		<div>Wine Spectator</div>
+	</li>
+</ul> -->
+		
+<!--		<label class="container">
+			<input type="checkbox" id="wineSearcher" checked="checked">
+			<span class="checkmark"></span>
+			<span style="vertical-align:middle">Wine-Searcher<span>
+		</label>
+		
+
+		<label class="container">Decanter
+			<input type="checkbox" id="decanter" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Falstaff
+			<input type="checkbox" id="falstaff" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">James Suckling
+			<input type="checkbox" id="jamesSuckling" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Jeb Dunnuck
+			<input type="checkbox" id="jebDunnuck" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+
+		<label class="container">Vinous
+			<input type="checkbox" id="vinous" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+
+		<label class="container">Wine Advocate
+			<input type="checkbox" id="wineAdvocate" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+
+<li>
+		<div><label class="container">
+			<input type="checkbox" id="wineEnthusiast" checked="checked">
+			<span class="checkmark"></span>
+		</label></div>
+		<div><label class="label_text">Wine Enthusiast</label></div>
+</li>
+		<label class="container">Wine Spectator
+			<input type="checkbox" id="wineSpectator" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Guia Penin (Spanish Only)
+			<input type="checkbox" id="guiaPenin" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Luca Maroni (Italian Only)
+			<input type="checkbox" id="lucaMaroni" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Wine.com
+			<input type="checkbox" id="wine.com" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Vivino
+			<input type="checkbox" id="vivino" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Total Wine & More
+			<input type="checkbox" id="totalWine" checked="checked">
+			<span class="checkmark"></span>
+		</label>
      </div>
+-->
+
      <script src="main.js"></script>
 </body>
 

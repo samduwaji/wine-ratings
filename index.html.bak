@@ -1,0 +1,102 @@
+<!-- Chateau Cantenac Brown -->
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+    <title>Ween Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="search">
+           <input type="text"  id="searchTerm" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" id="myButton" onclick="searchFields()" class="searchButton">
+             Search Ween!
+          </button>
+        </div>
+		
+		<div>
+			Select sites you'd like to search:
+		</div>
+		
+		<label class="container">Search All
+			<input type="checkbox" id="searchAll" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Wine-Searcher
+			<input type="checkbox" id="wineSearcher" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+
+		<label class="container">Decanter
+			<input type="checkbox" id="decanter" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Falstaff
+			<input type="checkbox" id="falstaff" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">James Suckling
+			<input type="checkbox" id="jamesSuckling" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Jeb Dunnuck
+			<input type="checkbox" id="jebDunnuck" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+
+		<label class="container">Vinous
+			<input type="checkbox" id="vinous" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+
+		<label class="container">Wine Advocate
+			<input type="checkbox" id="wineAdvocate" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+
+		<label class="container">Wine Enthusiast
+			<input type="checkbox" id="wineEnthusiast" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+
+		<label class="container">Wine Spectator
+			<input type="checkbox" id="wineSpectator" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Guia Penin (Spanish Only)
+			<input type="checkbox" id="guiaPenin" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Luca Maroni (Italian Only)
+			<input type="checkbox" id="lucaMaroni" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Wine.com
+			<input type="checkbox" id="wine.com" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Vivino
+			<input type="checkbox" id="vivino" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+		<label class="container">Total Wine & More
+			<input type="checkbox" id="totalWine" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+		
+     </div>
+
+     <script src="main.js"></script>
+</body>
+
+ </html>
+<!-- <button class="btn btn-success" onclick= "window.open('http://google.com','_blank')"> Google</button> -->
