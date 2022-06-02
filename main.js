@@ -17,16 +17,17 @@ function searchFields (){
 //  define links
 	let wineSearcherLink = `https://www.wine-searcher.com/find/${linkquery}/-/usa/-/ndp`;
 	let wineSpectatorLink = `https://www.winespectator.com/wine/search?submitted=Y&scope=ratings&winery=${linkquery}`;
-    let wineAdvocateLink = `https://www.robertparker.com/search/wines?q=${linkquery}`;
-    let jamesSucklingLink = `https://www.jamessuckling.com/?s=${linkquery}&content_all=All&contents%5B0%5D=Tasting+Reports&contents%5B1%5D=Tasting+Notes&contents%5B2%5D=Videos&contents%5B3%5D=Events&SelectedContents=Tasting%20Notes`;
-    let wineEnthusiastLink = `https://www.winemag.com/?s=${linkquery}&search_type=all`;
+   	let wineAdvocateLink = `https://www.robertparker.com/search/wines?q=${linkquery}`;
+   	let jamesSucklingLink = `https://www.jamessuckling.com/?s=${linkquery}&content_all=All&contents%5B0%5D=Tasting+Reports&contents%5B1%5D=Tasting+Notes&contents%5B2%5D=Videos&contents%5B3%5D=Events&SelectedContents=Tasting%20Notes`;
+   	let wineEnthusiastLink = `https://www.winemag.com/?s=${linkquery}&search_type=all`;
 	let vinousLink = `https://vinous.com/wines?term=${linkquery}&sort=vintage&sortDirection=true&page=1&per_page=25&displayType=reviews`;
-    let decanterLink = `https://www.decanter.com/wine-reviews/search?query=${linkquery}`;
-    let jebDunnuckLink = `https://jebdunnuck.com/wines/?keyword=${linkquery}`;
-    let falstaffLink = `https://www.falstaff.com/wine/tastings-scores/#${linkquery};default;entity:wine`;
+   	let decanterLink = `https://www.decanter.com/wine-reviews/search?query=${linkquery}`;
+   	let jebDunnuckLink = `https://jebdunnuck.com/wines/?keyword=${linkquery}`;
+	let wineIndependentLink = `https://thewineindependent.com/`;
+    	let falstaffLink = `https://www.falstaff.com/wine/tastings-scores/#${linkquery};default;entity:wine`;
 	let guiaPeninLink = `https://guiapenin.wine/guide/wines/en?winename=${linkquery}&vino=1`
-    let lucaMaroniLink = `http://www.lucamaroni.com/index.php/en/best-tastings/tastings/en/luca-maroni-eng`;
-    let vivinoLink = `https://www.vivino.com/search/wines?q=${linkquery}`;
+    	let lucaMaroniLink = `http://www.lucamaroni.com/index.php/en/best-tastings/tastings/en/luca-maroni-eng`;
+    	let vivinoLink = `https://www.vivino.com/search/wines?q=${linkquery}`;
    	let wineComLink = `https://www.wine.com/search/${linkquery}/0`;
 	let totalWineLink = `https://www.totalwine.com/search/all?text=${linkquery}&pageSize=24&aty=0,0,0,1`;
 //  let jancisRobinsonLink = `https://www.jancisrobinson.com/tastings?search-full=%22${linkquery}%22`;
@@ -40,6 +41,7 @@ function searchFields (){
 	let vinous = document.getElementById('vinous');
 	let jebDunnuck = document.getElementById('jebDunnuck');
 	let decanter = document.getElementById('decanter');
+	let wineIndependent = document.getElementById('wineIndependent');
 	let falstaff = document.getElementById('falstaff');
 	let guiaPenin = document.getElementById('guiaPenin');
 	let lucaMaroni = document.getElementById('lucaMaroni');
@@ -78,6 +80,10 @@ if(jebDunnuck.checked) {
 
 if(decanter.checked) {
 	window.open(decanterLink,'_blank');
+}
+	
+if(wineIndependent.checked) {
+	window.open(wineIndependentLink,'_blank');
 }
 
 if(falstaff.checked) {
