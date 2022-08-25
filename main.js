@@ -24,6 +24,7 @@ function searchFields (){
     let decanterLink = `https://www.decanter.com/wine-reviews/search?query=${linkquery}`;
     let jebDunnuckLink = `https://jebdunnuck.com/wines/?keyword=${linkquery}`;
     let falstaffLink = `https://www.falstaff.com/wine/tastings-scores/#${linkquery};default;entity:wine`;
+    let ggLink = `https://www.gilbertgaillard.com/en/resultats?filters[search]=${linkquery}`;
 	let guiaPeninLink = `https://guiapenin.wine/guide/wines/en?winename=${linkquery}&vino=1`
     let lucaMaroniLink = `http://www.lucamaroni.com/index.php/en/best-tastings/tastings/en/luca-maroni-eng`;
     let vivinoLink = `https://www.vivino.com/search/wines?q=${linkquery}`;
@@ -41,6 +42,7 @@ function searchFields (){
 	let jebDunnuck = document.getElementById('jebDunnuck');
 	let decanter = document.getElementById('decanter');
 	let falstaff = document.getElementById('falstaff');
+	let g&g = document.getElementById('g&g');	
 	let guiaPenin = document.getElementById('guiaPenin');
 	let lucaMaroni = document.getElementById('lucaMaroni');
 	let vivino = document.getElementById('vivino');    
@@ -82,6 +84,10 @@ if(decanter.checked) {
 
 if(falstaff.checked) {
 	window.open(falstaffLink,'_blank');
+}
+	
+if(g&g.checked) {
+	window.open(ggLink,'_blank');
 }
 
 if(guiaPenin.checked) {
