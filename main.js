@@ -21,7 +21,7 @@ function searchFields (){
     	let linkquery = encodeURI(searchVal)
     
 	let link0 = `https://www.wine-searcher.com/find/${linkquery}/-/usa/-/ndp`;
-	let link1 = `https://www.winespectator.com/wine/search?submitted=Y&scope=ratings&winery=${linkquery}`;
+	let link1 = `https://www.winespectator.com/search?q=${linkquery}&wineratings=y&sortBy=most-relevant&scope=site`;
     	let link2 = `https://www.robertparker.com/search/wines?q=${linkquery}`;
     	let link3 = `https://www.jamessuckling.com/?s=${linkquery}&content_all=All&contents%5B0%5D=Tasting+Reports&contents%5B1%5D=Tasting+Notes&contents%5B2%5D=Videos&contents%5B3%5D=Events&SelectedContents=Tasting%20Notes`;
     	let link4 = `https://www.winemag.com/?s=${linkquery}&search_type=all`;
