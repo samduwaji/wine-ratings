@@ -25,7 +25,7 @@ function searchFields (){
     	let link2 = `https://www.robertparker.com/search/wines?q=${linkquery}`;
     	let link3 = `https://www.jamessuckling.com/?s=${linkquery}&content_all=All&contents%5B0%5D=Tasting+Reports&contents%5B1%5D=Tasting+Notes&contents%5B2%5D=Videos&contents%5B3%5D=Events&SelectedContents=Tasting%20Notes`;
     	let link4 = `https://www.winemag.com/?s=${linkquery}&search_type=all`;
-	let link5 = `https://v1.vinous.com/wines?query=${linkquery}&search-filter=reviews&sort%5Bdirection%5D=desc&sort%5Bname%5D=review+date&utf8=%E2%9C%93&wf_dirty=false&wf_export_fields=&wf_export_format=&wf_id=&wf_match=all&wf_model=Wine&wf_name=&wf_order=vintage&wf_order_type=desc&wf_page=1&wf_per_page=25&wf_submitted=true&wf_type=WillFilter%3A%3AFilter&wine_filter%5Bauthor%5D=&wine_filter%5Bcolor%5D=&wine_filter%5Bcountry%5D=&wine_filter%5Bregion_1%5D=&wine_filter%5Bregion_2%5D=`;
+	let link5 = `https://v1.vinous.com/wines?utf8=%E2%9C%93&search-filter=reviews&query=${linkquery}`;
     	let link6 = `https://www.decanter.com/wine-reviews/search?query=${linkquery}`;
     	let link8 = `https://jebdunnuck.com/wines/?keyword=${linkquery}`;
     	let link9 = `https://www.falstaff.com/wine/tastings-scores/#${linkquery};default;entity:wine`;
