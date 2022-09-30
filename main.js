@@ -20,7 +20,7 @@ function searchFields (){
    	let wineAdvocateLink = `https://www.robertparker.com/search/wines?q=${linkquery}`;
    	let jamesSucklingLink = `https://www.jamessuckling.com/?s=${linkquery}&content_all=All&contents%5B0%5D=Tasting+Reports&contents%5B1%5D=Tasting+Notes&contents%5B2%5D=Videos&contents%5B3%5D=Events&SelectedContents=Tasting%20Notes`;
    	let wineEnthusiastLink = `https://www.winemag.com/?s=${linkquery}&search_type=all`;
-	let vinousLink = `https://vinous.com/wines?term=${linkquery}&sort=vintage&sortDirection=true&page=1&per_page=25&displayType=reviews`;
+	let vinousLink = `https://v1.vinous.com/wines?utf8=%E2%9C%93&search-filter=reviews&query=${linkquery}`;
    	let decanterLink = `https://www.decanter.com/wine-reviews/search?query=${linkquery}`;
    	let jebDunnuckLink = `https://jebdunnuck.com/wines/?keyword=${linkquery}`;
 	let wineIndependentLink = `https://thewineindependent.com/`;
@@ -33,80 +33,80 @@ function searchFields (){
 //  let jancisRobinsonLink = `https://www.jancisrobinson.com/tastings?search-full=%22${linkquery}%22`;
 
 //  define checkboxes
-	let wineSearcher = document.getElementById('wineSearcher');
-	let wineSpectator = document.getElementById('wineSpectator');
-	let wineAdvocate = document.getElementById('wineAdvocate');
-	let wineEnthusiast = document.getElementById('wineEnthusiast');
-	let jamesSuckling = document.getElementById('jamesSuckling');
-	let vinous = document.getElementById('vinous');
-	let jebDunnuck = document.getElementById('jebDunnuck');
-	let decanter = document.getElementById('decanter');
-	let wineIndependent = document.getElementById('wineIndependent');
-	let falstaff = document.getElementById('falstaff');
-	let guiaPenin = document.getElementById('guiaPenin');
-	let lucaMaroni = document.getElementById('lucaMaroni');
-	let vivino = document.getElementById('vivino');    
-	let wineCom = document.getElementById('wine.com');
-	let totalWine = document.getElementById('totalWine');
+	let wineSearcherBox = document.getElementById('wineSearcher');
+	let wineSpectatorBox = document.getElementById('wineSpectator');
+	let wineAdvocateBox = document.getElementById('wineAdvocate');
+	let wineEnthusiastBox = document.getElementById('wineEnthusiast');
+	let jamesSucklingBox = document.getElementById('jamesSuckling');
+	let vinousBox = document.getElementById('vinous');
+	let jebDunnuckBox = document.getElementById('jebDunnuck');
+	let decanterBox = document.getElementById('decanter');
+	let wineIndependentBox = document.getElementById('wineIndependent');
+	let falstaffBox = document.getElementById('falstaff');
+	let guiaPeninBox = document.getElementById('guiaPenin');
+	let lucaMaroniBox = document.getElementById('lucaMaroni');
+	let vivinoBox = document.getElementById('vivino');    
+	let wineComBox = document.getElementById('wine.com');
+	let totalWineBox = document.getElementById('totalWine');
 
 //if checkbox checked open corresponding link in new tab
-if(wineSearcher.checked) {
+if(wineSearcherBox.checked) {
 	window.open(wineSearcherLink,'_blank');
 };
 
-if(wineSpectator.checked) {
+if(wineSpectatorBox.checked) {
 	window.open(wineSpectatorLink,'_blank');
 };
 
-if(wineAdvocate.checked) {
+if(wineAdvocateBox.checked) {
     window.open(wineAdvocateLink,'_blank');
 }
 
-if(wineEnthusiast.checked) {
+if(wineEnthusiastBox.checked) {
 	window.open(wineEnthusiastLink,'_blank');
 }
 
-if(jamesSuckling.checked) {
+if(jamesSucklingBox.checked) {
     window.open(jamesSucklingLink,'_blank');
 }
 
-if(vinous.checked) {
+if(vinousBox.checked) {
 	window.open(vinousLink,'_blank');
 }
 
-if(jebDunnuck.checked) {
+if(jebDunnuckBox.checked) {
 	window.open(jebDunnuckLink,'_blank');
 }
 
-if(decanter.checked) {
+if(decanterBox.checked) {
 	window.open(decanterLink,'_blank');
 }
 	
-if(wineIndependent.checked) {
+if(wineIndependentBox.checked) {
 	window.open(wineIndependentLink,'_blank');
 }
 
-if(falstaff.checked) {
+if(falstaffBox.checked) {
 	window.open(falstaffLink,'_blank');
 }
 
-if(guiaPenin.checked) {
+if(guiaPeninBox.checked) {
 	window.open(guiaPeninLink,'_blank');
 }
 
-if(lucaMaroni.checked) {
+if(lucaMaroniBox.checked) {
 	window.open(lucaMaroniLink,'_blank');
 }
 
-if(vivino.checked) {
+if(vivinoBox.checked) {
 	window.open(vivinoLink,'_blank');
 }
 
-if(wineCom.checked) {
+if(wineComBox.checked) {
 	window.open(wineComLink,'_blank');
 }
 
-if(totalWine.checked) {
+if(totalWineBox.checked) {
 	window.open(totalWineLink,'_blank');
 }
 
