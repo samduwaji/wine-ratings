@@ -23,9 +23,9 @@ function searchFields (){
 	let vinousLink = `https://v1.vinous.com/wines?utf8=%E2%9C%93&search-filter=reviews&query=${linkquery}`;
    	let decanterLink = `https://www.decanter.com/wine-reviews/search?query=${linkquery}`;
    	let jebDunnuckLink = `https://jebdunnuck.com/wines/?keyword=${linkquery}`;
-	let wineIndependentLink = `https://thewineindependent.com/`;
+	let wineIndependentLink = `https://thewineindependent.com/tasting-notes/`;
     	let falstaffLink = `https://www.falstaff.com/en/search/wine?searchTerm=${linkquery}`;
-	let guiaPeninLink = `https://guiapenin.wine/guide/wines/en?winename=${linkquery}&vino=1`;
+	let guiaPeninLink = `https://guiapenin.wine/guide/wines/en?winename=${linkquery}&vino=1`; 
     	let lucaMaroniLink = `http://www.lucamaroni.com/index.php/en/best-tastings/tastings/en/luca-maroni-eng`;
     	let vivinoLink = `https://www.vivino.com/search/wines?q=${linkquery}`;
    	let wineComLink = `https://www.wine.com/search/${linkquery}/0`;
