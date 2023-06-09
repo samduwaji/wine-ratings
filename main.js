@@ -19,7 +19,7 @@ function searchFields (){
 	let wineSpectatorLink = `https://www.winespectator.com/wine/search?submitted=Y&scope=ratings&winery=${linkquery}`;
    	let wineAdvocateLink = `https://www.robertparker.com/search/wines?q=${linkquery}`;
    	let jamesSucklingLink = `https://www.jamessuckling.com/?s=${linkquery}&content_all=All&contents%5B0%5D=Tasting+Reports&contents%5B1%5D=Tasting+Notes&contents%5B2%5D=Videos&contents%5B3%5D=Events&SelectedContents=Tasting%20Notes`;
-   	let wineEnthusiastLink = `https://www.winemag.com/?s=${linkquery}&search_type=all`;
+   	let wineEnthusiastLink = `https://www.wineenthusiast.com/?s=${linkquery}&search_type=ratings`;
 	let vinousLink = `https://v1.vinous.com/wines?utf8=%E2%9C%93&search-filter=reviews&query=${linkquery}`;
    	let decanterLink = `https://www.decanter.com/wine-reviews/search?query=${linkquery}`;
    	let jebDunnuckLink = `https://jebdunnuck.com/wines/?keyword=${linkquery}`;
