@@ -1,4 +1,26 @@
+
 var input = document.getElementById("searchTerm");
+
+// get the selectAll and clearAll buttons by their ids
+var selectAll = document.getElementById("selectAll");
+var clearAll = document.getElementById("clearAll");
+// get all the checkboxes by their class name
+var checkboxes = document.getElementsByClassName("checks");
+// add a click event listener to the selectAll button
+selectAll.addEventListener("click", function() {
+    // loop through the checkboxes and set their checked property to true
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = true;
+    }
+});
+// add a click event listener to the clearAll button
+clearAll.addEventListener("click", function() {
+    // loop through the checkboxes and set their checked property to false
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = false;
+    }
+});
+
 // Execute a function when the user releases a key on the keyboard
 input.addEventListener("keyup", function(event) {
 	// Number 13 is the "Enter" key on the keyboard
@@ -31,7 +53,7 @@ function searchFields (){
         {name: 'vivino', link: `https://www.vivino.com/search/wines?q=${linkquery}`},
         {name: 'wineCom', link: `https://www.wine.com/search/${linkquery}/0`},
         {name: 'totalWine', link: `https://www.totalwine.com/search/all?text=${linkquery}&pageSize=24&aty=0,0,0,1`}
-	// {name: 'jancisRobinson', link: `https://www.jancisrobinson.com/tastings?search-full=%22${linkquery}%22`}
+		// {name: 'jancisRobinson', link: `https://www.jancisrobinson.com/tastings?search-full=%22${linkquery}%22`}
     ];
     
 	// loop through the array and open a new window for each website if the checkbox with the corresponding name is checked
