@@ -5,7 +5,7 @@ var input = document.getElementById("searchTerm");
 var selectAll = document.getElementById("selectAll");
 var clearAll = document.getElementById("clearAll");
 // get all the checkboxes by their class name
-var checkboxes = document.getElementsByClassName("checks");
+var checkboxes = document.querySelectorAll(".checks");
 // add a click event listener to the selectAll button
 selectAll.addEventListener("click", function() {
     // loop through the checkboxes and set their checked property to true
@@ -33,7 +33,7 @@ input.addEventListener("keyup", function(event) {
 });
 
 function searchFields (){
-    let searchVal = input.value.replace(' ', '+');
+    let searchVal = input.value.replace(/ /g, '+');
     let linkquery = encodeURI(searchVal);
     
 	// create an array of objects with the name and link of each website
