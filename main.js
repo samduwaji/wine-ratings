@@ -47,7 +47,7 @@ function searchFields (){
         {name: 'jebDunnuck', link: `https://jebdunnuck.com/wines/?keyword=${linkquery}`},
         {name: 'decanter', link: `https://www.decanter.com/wine-reviews/search?query=${linkquery}`},
         {name: 'wineIndependent', link: `https://thewineindependent.com/tasting-notes/`},
-	{name: 'janeAnson', link: `https://janeanson.com/`}
+	{name: 'janeAnson', link: `https://janeanson.com/`},
         {name: 'falstaff', link: `https://www.falstaff.com/en/search/wine?searchTerm=${linkquery}`},
         {name: 'guiaPenin', link: `https://guiapenin.wine/guide/wines/en?winename=${linkquery}&vino=1`}, 
         {name: 'lucaMaroni', link: `http://www.lucamaroni.com/index.php/en/best-tastings/tastings/en/luca-maroni-eng`},
