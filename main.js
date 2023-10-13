@@ -1,27 +1,29 @@
-
+// define a variable for the user input (seach term)
 var input = document.getElementById("searchTerm");
 
-// get the selectAll and clearAll buttons by their ids
+// define a variable for the selectAll and clearAll buttons by their id
 var selectAll = document.getElementById("selectAll");
 var clearAll = document.getElementById("clearAll");
-// get all the checkboxes by their class name
+
+// define a variable for all the checkboxes
 var checkboxes = document.querySelectorAll(".checks");
+
 // add a click event listener to the selectAll button
 selectAll.addEventListener("click", function() {
-    // loop through the checkboxes and set their checked property to true
+    // whent he button is clicked - loop through the checkboxes and set their checked property to true
     for (var i = 0; i < checkboxes.length; i++) {
         checkboxes[i].checked = true;
     }
 });
 // add a click event listener to the clearAll button
 clearAll.addEventListener("click", function() {
-    // loop through the checkboxes and set their checked property to false
+    // when the button is clicked - loop through the checkboxes and set their checked property to false
     for (var i = 0; i < checkboxes.length; i++) {
         checkboxes[i].checked = false;
     }
 });
 
-// Execute a function when the user releases a key on the keyboard
+// Add ability to use "Enter" key to execute search.  Executes a "click" function when the user releases a key on the keyboard
 input.addEventListener("keyup", function(event) {
 	// Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
@@ -32,11 +34,12 @@ input.addEventListener("keyup", function(event) {
     }
 });
 
+// define the main function, which takes the input, replaces spaces with "+"
 function searchFields (){
     let searchVal = input.value.replace(/ /g, '+');
     let linkquery = encodeURI(searchVal);
     
-	// create an array of objects with the name and link of each website
+// then creates an list of objects with the name and link of each website
     let websites = [
         {name: 'wineSearcher', link: `https://www.wine-searcher.com/find/${linkquery}/-/usa/-/ndp`},
         {name: 'wineSpectator', link: `https://www.winespectator.com/wine/search?submitted=Y&scope=ratings&winery=${linkquery}`},
@@ -57,7 +60,7 @@ function searchFields (){
 		// {name: 'jancisRobinson', link: `https://www.jancisrobinson.com/tastings?search-full=%22${linkquery}%22`}
     ];
     
-	// loop through the array and open a new window for each website if the checkbox with the corresponding name is checked
+// then loops through the array and opens a new window for each website if the checkbox with the corresponding name is checked
     for (let website of websites) {
         let checkbox = document.getElementById(website.name);
         if (checkbox.checked) {
