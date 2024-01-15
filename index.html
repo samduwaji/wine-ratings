@@ -1,9 +1,36 @@
-<!-- Chateau Cantenac Brown -->
-<!-- <!DOCTYPE html> -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            background: url('https://source.unsplash.com/CPMZguYURMw') no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+        }
+        .container, .container-fluid {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+        }
+        .searchTerm, .searchButton {
+            border: 1px solid maroon;
+        }
+        .searchButton {
+            background-color: maroon;
+            color: white;
+        }
+        .checks {
+            margin-right: 10px;
+        }
+        .wine-options label {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+        }
+    </style>
 
-	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZHVGYGP2L"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -12,127 +39,56 @@
 	
 	  gtag('config', 'G-RZHVGYGP2L');
 	</script>
-
 	
     <title>wine-ratings.com</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
-
 <body>
-    <div class="wrap">
-        <div class="search">
-           <input type="text"  id="searchTerm" class="searchTerm" placeholder="Enter wine name & vintage">
-           <button type="submit" id="myButton" onclick="searchFields()" class="searchButton">
-             Search Ratings
-          </button>
-        </div>
-		
-		<div>
-			Select sites you'd like to search:
-		</div>
-		
-		<p class="font2">
-		<label><input type="checkbox" class="checks" id="wineSearcher" checked="checked"/> Wine-Searcher</label>
-		<br><label><input type="checkbox" class="checks" id="wineSpectator" checked="checked"/> Wine Spectator</label>
-		<br><label><input type="checkbox" class="checks" id="wineAdvocate" checked="checked"/> Wine Advocate</label>
-		<br><label><input type="checkbox" class="checks" id="wineEnthusiast" checked="checked"/> Wine Enthusiast</label>
-		<br><label><input type="checkbox" class="checks" id="jamesSuckling" checked="checked"/> James Suckling</label>
-		<br><label><input type="checkbox" class="checks" id="vinous" checked="checked"/> Vinous</label>
-		<br><label><input type="checkbox" class="checks" id="jebDunnuck" checked="checked"/> Jeb Dunnuck</label>
-		<br><label><input type="checkbox" class="checks" id="decanter" checked="checked"/> Decanter</label>
-		<br><label><input type="checkbox" class="checks" id="wineIndependent" checked="checked"/> The Wine Independent</label>
-		<br><label><input type="checkbox" class="checks" id="janeAnson" checked="checked"/> Jane Anson</label>
-		<br><label><input type="checkbox" class="checks" id="falstaff" checked="checked"/> Falstaff</label>
-		<br><label><input type="checkbox" class="checks" id="guiaPenin" checked="checked"/> Guia Penin (Spanish Only)</label>
-		<br><label><input type="checkbox" class="checks" id="lucaMaroni" checked="checked"/> Luca Maroni (Italian Only)</label>
-		<br><label><input type="checkbox" class="checks" id="vivino" checked="checked"/> Vivino</label>
-		<br><label><input type="checkbox" class="checks" id="wineCom" checked="checked"/> Wine.com</label>
-		<br><label><input type="checkbox" class="checks" id="totalWine" checked="checked"/> Total Wine & More</label>
-		<!-- <br><label><input type="checkbox" class="checks" id="jancisRobinson" checked="checked"/> Jancis Robinson</label> -->
-		</p>
-
-	    	<button id="selectAll"> Select All </button >
-        	<button id="clearAll"> Clear All </button >
-		
-		
-<!--	<label class="container">
-			<input type="checkbox" id="wineSearcher" checked="checked">
-			<span class="checkmark"></span>
-			<span style="vertical-align:middle">Wine-Searcher<span>
-		</label>
-		
-
-		<label class="container">Decanter
-			<input type="checkbox" id="decanter" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-		
-		<label class="container">Falstaff
-			<input type="checkbox" id="falstaff" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-		
-		<label class="container">James Suckling
-			<input type="checkbox" id="jamesSuckling" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-		
-		<label class="container">Jeb Dunnuck
-			<input type="checkbox" id="jebDunnuck" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-
-		<label class="container">Vinous
-			<input type="checkbox" id="vinous" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-
-		<label class="container">Wine Advocate
-			<input type="checkbox" id="wineAdvocate" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-
-		<label class="container">Wine Enthusiast
-			<input type="checkbox" id="wineEnthusiast" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-
-		<label class="container">Wine Spectator
-			<input type="checkbox" id="wineSpectator" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-		
-		<label class="container">Guia Penin (Spanish Only)
-			<input type="checkbox" id="guiaPenin" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-		
-		<label class="container">Luca Maroni (Italian Only)
-			<input type="checkbox" id="lucaMaroni" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-		
-		<label class="container">Wine.com
-			<input type="checkbox" id="wine.com" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-		
-		<label class="container">Vivino
-			<input type="checkbox" id="vivino" checked="checked">
-			<span class="checkmark"></span>
-		</label>
-		
-		<label class="container">Total Wine & More
-			<input type="checkbox" id="totalWine" checked="checked">
-			<span class="checkmark"></span>
-		</label> 
--->
-		
-     </div>
-
-     <script src="main.js"></script>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>wine-ratings.com</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section>
+            <h2>Discover Wine Ratings</h2>
+            <div class="search">
+                <input type="text" id="searchTerm" class="searchTerm" placeholder="Enter wine name & vintage">
+                <button type="submit" id="myButton" class="searchButton">Search Ratings</button>
+            </div>
+            <div class="wine-selection">
+                <h3>Select sites you'd like to search:</h3>
+                <form class="wine-options">
+                    <label><input type="checkbox" class="checks" id="wineSearcher" checked="checked"/> Wine-Searcher</label>
+                    <label><input type="checkbox" class="checks" id="wineSpectator" checked="checked"/> Wine Spectator</label>
+                    <label><input type="checkbox" class="checks" id="wineAdvocate" checked="checked"/> Wine Advocate</label>
+                    <label><input type="checkbox" class="checks" id="wineEnthusiast" checked="checked"/> Wine Enthusiast</label>
+		    <label><input type="checkbox" class="checks" id="jamesSuckling" checked="checked"/> James Suckling</label>
+		    <label><input type="checkbox" class="checks" id="vinous" checked="checked"/> Vinous</label>
+		    <label><input type="checkbox" class="checks" id="jebDunnuck" checked="checked"/> Jeb Dunnuck</label>
+		    <label><input type="checkbox" class="checks" id="decanter" checked="checked"/> Decanter</label>
+		    <label><input type="checkbox" class="checks" id="wineIndependent" checked="checked"/> The Wine Independent</label>
+		    <label><input type="checkbox" class="checks" id="janeAnson" checked="checked"/> Jane Anson</label>
+		    <label><input type="checkbox" class="checks" id="falstaff" checked="checked"/> Falstaff</label>
+		    <label><input type="checkbox" class="checks" id="guiaPenin" checked="checked"/> Guia Penin (Spanish Only)</label>
+		    <label><input type="checkbox" class="checks" id="lucaMaroni" checked="checked"/> Luca Maroni (Italian Only)</label>
+		    <label><input type="checkbox" class="checks" id="vivino" checked="checked"/> Vivino</label>
+		    <label><input type="checkbox" class="checks" id="wineCom" checked="checked"/> Wine.com</label>
+                    <label><input type="checkbox" class="checks" id="totalWine" checked="checked"/> Total Wine & More</label>
+			
+                </form>
+                <button id="selectAll">Select All</button>
+                <button id="clearAll">Clear All</button>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <small>© 2024 wine-ratings.com</small>
+    </footer>
 </body>
-
- </html>
-<!-- <button class="btn btn-success" onclick= "window.open('http://google.com','_blank')"> Google</button> -->
+<script src="main.js"></script>
+</html>
