@@ -1,9 +1,10 @@
 // define a variable for the user input (seach term)
 var input = document.getElementById("searchTerm");
 
-// define a variable for the selectAll and clearAll buttons by their id
+// define a variable for buttons by their id
 var selectAll = document.getElementById("selectAll");
 var clearAll = document.getElementById("clearAll");
+var searchButton = document.getElementById("myButton");
 
 // define a variable for all the checkboxes
 var checkboxes = document.querySelectorAll(".checks");
@@ -23,6 +24,11 @@ clearAll.addEventListener("click", function() {
     }
 });
 
+// Add a click event listener to the search button
+searchButton.addEventListener("click", function() {
+    searchFields();
+});
+
 // Add ability to use "Enter" key to execute search.  Executes a "click" function when the user releases a key on the keyboard
 input.addEventListener("keyup", function(event) {
 	// Number 13 is the "Enter" key on the keyboard
@@ -30,7 +36,7 @@ input.addEventListener("keyup", function(event) {
 		// Cancel the default action, if needed
         event.preventDefault();
 		// Trigger the button element with a click
-        document.getElementById("myButton").click();
+        searchButton.click();
     }
 });
 
