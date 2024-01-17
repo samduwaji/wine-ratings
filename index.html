@@ -37,12 +37,27 @@
             box-shadow: 0 0 5px maroon;
         }
         
-        .wine-options label {
-            display: block;
-            margin-bottom: 10px;
-            color: white;
+        .wine-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Adjust '2' to the number of columns you want */
+            gap: 10px; /* Adjust the gap size as needed */
         }
-    
+
+        .buttons-container {
+            display: flex;
+            justify-content: start; /* Adjust this if you want to change the alignment */
+            gap: 10px; /* Space between buttons */
+        }
+
+                /* Targeting all button elements and elements with role='button' */
+        button, [role="button"] {
+            transition: transform 0.3s ease; /* Smooth transition for the transform property */
+        }
+
+        button:hover, [role="button"]:hover {
+            transform: scale(1.03); /* Slightly increase the size */
+}
+
     </style>
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZHVGYGP2L"></script>
@@ -94,8 +109,10 @@
 </span>
 			
                 </form>
+                <div class="buttons-container">
                 <button id="selectAll" class="selectButton">Select All</button>
                 <button id="clearAll" class="selectButton">Clear All</button>
+                </div>
             </div>
         </section>
     </main>
