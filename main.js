@@ -49,7 +49,7 @@ function searchFields (){
     let websites = [
         {name: 'wineSearcher', link: `https://www.wine-searcher.com/find/${linkquery}/-/usa/-/ndp`},
         {name: 'wineSpectator', link: `https://www.winespectator.com/wine/search?submitted=Y&scope=ratings&winery=${linkquery}`},
-        {name: 'wineAdvocate', link: `https://www.robertparker.com/search/wines?q=${linkquery}`},
+        {name: 'wineAdvocate', link: `https://www.robertparker.com/search/wine?keyword=${linkquery}`},
         {name: 'wineEnthusiast', link: `https://www.wineenthusiast.com/?s=${linkquery}&search_type=ratings`},
         {name: 'jamesSuckling', link: `https://www.jamessuckling.com/?s=${linkquery}&content_all=All&contents%5B0%5D=Tasting+Reports&contents%5B1%5D=Tasting+Notes&contents%5B2%5D=Videos&contents%5B3%5D=Events&SelectedContents=Tasting%20Notes`},
         {name: 'vinous', link: `https://v1.vinous.com/wines?utf8=%E2%9C%93&search-filter=reviews&query=${linkquery}`},
